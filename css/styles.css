@@ -158,14 +158,25 @@ address {
 
 /* Hero */
 .hero {
-    color: var(--primary-white-color);
     background-color: var(--footer-bg-color);
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    background-size: contain;
+    max-width: 1600px;
+    max-height: 600px;
+
 }
 
 .title-hero {
+    color: var(--primary-white-color);
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -290,6 +301,12 @@ address {
     justify-content: center;
 }
 
+.team-item {
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-item + .team-item{
     margin-left: 30px;
 }
@@ -358,8 +375,11 @@ address {
 .button-projects:hover,
 .button-projects:focus {
     color: var(--primary-white-color);
-    background-color: var(--primary-accent-color)
-}
+    background-color: var(--primary-accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 
 .projects-list {
     display: flex;
@@ -369,6 +389,12 @@ address {
 .projects-item {
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.projects-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-item:nth-child(3n) {
