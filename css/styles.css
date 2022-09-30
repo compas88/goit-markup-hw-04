@@ -416,8 +416,56 @@ nav {
 
 }
 
+.team .social-list {
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.team .social-link {
+    fill: #afb1b8;
+}
+
+.team .social-link:hover,
+.team .social-link:active {
+    background-color: var(--primary-accent-color);
+    fill: var(--primary-white-color);
+}
+
 .team .title {
     margin-bottom: 50px;
+}
+
+
+/* CLIENTS */
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-logo {
+    margin-top: 50px;
+}
+
+.clients-logo+.clients-logo {
+    margin-left: 30px;
+}
+
+.clients-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--primary-accent-color);
+    border: 1px solid var(--primary-accent-color);
 }
 
 /* PORTFOLIO */
